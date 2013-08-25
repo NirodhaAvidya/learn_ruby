@@ -1,14 +1,15 @@
 /* Solarized Palette http://ethanschoonover.com/solarized */
 /* Font Stacks http://www.artsiteframework.com/guide/fontstacks.php */
 body {
-  background-color: white;
+  background-color: #3E3E3E;
   font-family: Optima, Candara, "Trebuchet MS", sans-serif;
   margin: 0px;
-  font-size: 15px;
-  line-height: 19px; }
+  font-size: 25px;
+  line-height: 30px;
+  color: #D4D4D4 }
 
 a, a:visited {
-  color: #268bd2; }
+  color: #00BFBF; }
 
 a:hover {
   text-decoration: underline; }
@@ -26,7 +27,7 @@ a {
     font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
     margin-left: -1em; }
   .content h1 {
-    text-shadow: #999 1px 1px 1px;
+    text-shadow: #161616 1px 1px 1px;
     padding: .5em .25em;
     margin-top: 1em; }
   .content h2 {
@@ -36,15 +37,15 @@ a {
     overflow-x: auto; }
 
 .header, .footer {
-  font-size: 80%;
+  font-size: 95%;
   padding: .25em;
-  background-color: #f2f2f2; }
+  background-color: #353535; }
 
 .header {
   border-bottom: 1px solid #002b36;
   text-align: left; }
   .header h1 {
-    color: #800000;
+    color: #B7B7B7;
     margin: 0 0 -8px 0;
     padding: 0;
     font: 30px/48px Optima, Candara, "Trebuchet MS", sans-serif;
@@ -52,15 +53,15 @@ a {
   .header h2 {
     margin: 0 0 4px 13px;
     padding: 0;
-    font: 10pt Optima, Candara, "Trebuchet MS", sans-serif;
-    color: #686868;
+    font: 15pt Optima, Candara, "Trebuchet MS", sans-serif;
+    color: #D4D4D4;
     letter-spacing: 0;
     font-variant: small-caps; }
   .header a, .header a:visited {
-    color: #800000;
+    color: #00B300;
     text-decoration: none; }
   .header a:hover {
-    color: #37030B;
+    color: #00FF40;
     text-decoration: none; }
 
 .footer {
@@ -71,11 +72,13 @@ a {
   float: left;
   margin: 1em;
   padding: 0 1em 1em;
-  width: 14em;
-  font-size: 75%; }
+  width: 10em;
+  font-size: 100%;
+  color: #D4D4D4
+  }
 
 .nav {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.15, white), color-stop(0.85, #f2f2f2));
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.15, #666666), color-stop(0.85, #171717));
   background: -moz-linear-gradient(center bottom, white 15%, #f2f2f2 85%);
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -94,16 +97,17 @@ a {
 
 pre {
   font-family: "Lucida Sans Typewriter Regular", "lucida console", monaco, "andale mono", "bitstream vera sans mono", consolas, "DejaVu Sans Mono", Courier, "Courier New", monospace;
-  background-color: #e9e9ff;
+  background-color: #0000A0;
   padding: .5em 1em;
   border: 1px solid #93a1a1; }
 
 code {
-  font-family: "Lucida Sans Typewriter Regular", "lucida console", monaco, "andale mono", "bitstream vera sans mono", consolas, "DejaVu Sans Mono", Courier, "Courier New", monospace;
-  background-color: #efefff; }
+  font-family: "Source Code Pro","Lucida Sans Typewriter Regular", "lucida console", monaco, "andale mono", "bitstream vera sans mono", "consolas", "DejaVu Sans Mono", Courier, "Courier New", monospace;
+  background-color: #0000A0;
+  color: #DDDD00 }
 
 pre > code {
-  background-color: #e9e9ff; }
+  background-color: #0000A0; }
 
 li > p:nth-child(0) {
   margin: 0; }
