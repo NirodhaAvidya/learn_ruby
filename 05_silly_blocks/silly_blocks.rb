@@ -18,5 +18,5 @@ def adder(x=1)
 end
 
 def repeater(x=1)
-  x.times (yield)
+  x.times{yield}
 end
