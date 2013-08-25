@@ -1,5 +1,5 @@
 .idea
 .rspec
-spec_helper.rb
+spec/spec_helper.rb
 
 
