@@ -20,6 +20,13 @@ describe Book do
     @book = Book.new
   end
 
+  # describe 'title' do
+  #   it 'numbers' do
+  #     @book.title = "1984"
+  #     @book.title.should == "1984"
+  #   end
+  # end
+
   describe 'title' do
     it 'should capitalize the first letter' do
       @book.title = "inferno"
