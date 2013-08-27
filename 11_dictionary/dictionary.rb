@@ -28,7 +28,7 @@ class Dictionary
   end
 
   def printable
-      entries.sort_by{|k,v|v}.map{|k,v| "[#{k}] \"#{v}\"\n" }.flatten.join{/\n/}.chomp
+      entries.sort_by{|k,v|k}.map{|k,v| "[#{k}] \"#{v}\"\n" }.flatten.join{/\n/}.chomp
     # I know you don't have to sort by keys explicitly, but this allows for easily switching to sorting by value if wanted down the line.
   end
 

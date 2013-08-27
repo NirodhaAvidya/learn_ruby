@@ -1,4 +1,4 @@
-# # Topics
+        # # Topics
 #
 # * modules
 # * strings
@@ -67,15 +67,15 @@ describe "#translate" do
 
   # Test-driving bonus:
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
-  it "Maintains capitalization" 
+  it "Maintains capitalization"
     # s = translate("The rain in Spain")
     # s.should == "Ethay ainray inay Ainspay"
-  
+
 
   # * retain the punctuation from the original phrase
-  it "Retain punctuation" 
+  it "Retain punctuation"
     # s = translate("Me, you, and the Oxford comma.")
     # s.should == "Emay, ouya, anday ethay Oxforday ommacay."
-  
+
 
 end
