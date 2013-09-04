@@ -70,6 +70,7 @@ describe Fixnum do
 
   it "reads hundreds" do
     100.in_words.should == 'one hundred'
+    101.in_words.should == 'one hundred one'
     200.in_words.should == 'two hundred'
     300.in_words.should == 'three hundred'
     123.in_words.should == 'one hundred twenty three'
@@ -80,13 +81,17 @@ describe Fixnum do
   end
 
   it "reads thousands" do
-    1000.in_words.should == 'one thousand'
-    32767.in_words.should == 'thirty two thousand seven hundred sixty seven'
-    32768.in_words.should == 'thirty two thousand seven hundred sixty eight'
+    1_000.in_words.should == 'one thousand'
+    10_001.in_words.should == 'ten thousand one'
+    100_001.in_words.should == 'one hundred thousand one'
+    32_767.in_words.should == 'thirty two thousand seven hundred sixty seven'
+    32_768.in_words.should == 'thirty two thousand seven hundred sixty eight'
+    559_311.in_words.should == 'five hundred fifty nine thousand three hundred eleven'
   end
 
   it "reads millions" do
     10_000_001.in_words.should == 'ten million one'
+    10_001_001.in_words.should == 'ten million one thousand one'
   end
 
   it "reads billions" do
@@ -96,6 +101,7 @@ describe Fixnum do
   it "reads trillions" do
     1_000_000_000_000.in_words.should == 'one trillion'
     1_000_000_000_001.in_words.should == 'one trillion one'
+    110_000_023_000_001.in_words.should == 'one hundred ten trillion twenty three million one'
     1_888_259_040_036.in_words.should == 'one trillion eight hundred eighty eight billion two hundred fifty nine million forty thousand thirty six'
   end
 
