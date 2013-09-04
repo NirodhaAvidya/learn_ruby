@@ -67,15 +67,32 @@ describe "#translate" do
 
   # Test-driving bonus:
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
-  it "Maintains capitalization"
-    # s = translate("The rain in Spain")
-    # s.should == "Ethay ainray inay Ainspay"
 
+  it "Maintains capitalization 'American Pie'" do
+    s = translate("American Pie")
+    s.should == "Americanay Iepay"
+  end
+
+  it "Maintains capitalization 'The rain in Spain'" do
+    s = translate("The rain in Spain")
+    s.should == "Ethay ainray inay Ainspay"
+  end
+
+  it "Maintains capitalization 'Quick like a Squirel'" do
+    s = translate("Quick like a Squirel")
+    s.should == "Ickquay ikelay aay Irelsquay"
+  end
+
+    it "Maintains capitalization 'QUIT SCREAMING AT ME'" do
+    s = translate("QUIT SCREAMING AT ME")
+    s.should == "ITQUAY EAMINGSCRAY ATAY EMAY"
+  end
 
   # * retain the punctuation from the original phrase
-  it "Retain punctuation"
-    # s = translate("Me, you, and the Oxford comma.")
-    # s.should == "Emay, ouya, anday ethay Oxforday ommacay."
-
+  it "Retain punctuation" do
+    s = translate("Me, you, and the Oxford comma.")
+    s.should == "Emay, ouyay, anday ethay Oxforday ommacay."
+  end
+  #This isn't going to work for an apostrophe
 
 end

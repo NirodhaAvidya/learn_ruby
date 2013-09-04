@@ -79,11 +79,11 @@ end
 
 describe "multiply" do
   it "multiplies two numbers" do
-    multiply([4,8]).should == 32
+    multiply(4,8).should == 32
   end
 
   it "multiplies several numbers" do
-    multiply([4,8,15,16,23,42]).should == 7418880
+    multiply(4,8,15,16,23,42).should == 7418880
   end
 end
 

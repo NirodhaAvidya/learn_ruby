@@ -1,8 +1,7 @@
 class Friend
+
   def greeting (name = nil)
-    case
-      when name == nil then "Hello!"
-      when name != nil then "Hello, #{name}!"
-    end
+    name == nil ? "Hello!" : "Hello, #{name}!"
   end
+
 end

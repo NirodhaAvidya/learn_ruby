@@ -53,8 +53,13 @@ class RPNCalculator
     @result
   end
 
-  def tokens str
+  def tokens(str)
     str.split.collect{|e| e =~ /\d/ ? e.to_i: e.to_sym  }
+  end
+
+  def evaluate(str)
+    ary = str.split(//)
+
   end
 
 end

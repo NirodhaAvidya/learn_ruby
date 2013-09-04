@@ -33,12 +33,3 @@ class Dictionary
   end
 
 end
-
-# test = Dictionary.new
-# puts test.add('zebra' => 'african land animal with stripes')
-# puts test.add('fish' => 'aquatic animal')
-# puts test.add('apple' => 'fruit')
-# puts test.keywords
-# puts test.include? "fish"
-# puts test.find "ap"
-# puts test.printable
